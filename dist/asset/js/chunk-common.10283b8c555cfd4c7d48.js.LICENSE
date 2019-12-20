@@ -1,0 +1,20 @@
+/*!
+ * 
+ *   sako-vue
+ *   vue template with webpack4
+ * 
+ *   @version v1.0.0
+ *   @homepage https://github.com/HongYangHT/sako-vue#readme
+ *   @repository git+https://github.com/HongYangHT/sako-vue.git
+ * 
+ *   (c) 2019 sam.hongyang
+ *   Released under the MIT License.
+ *   hash: c56a13cd771565bff31f
+ * 
+ */
+
+/*!
+  Copyright (c) 2017 Jed Watson.
+  Licensed under the MIT License (MIT), see
+  http://jedwatson.github.io/classnames
+*/

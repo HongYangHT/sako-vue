@@ -1,0 +1,14 @@
+/*!
+ * 
+ *   sako-vue
+ *   vue template with webpack4
+ * 
+ *   @version v1.0.0
+ *   @homepage https://github.com/HongYangHT/sako-vue#readme
+ *   @repository git+https://github.com/HongYangHT/sako-vue.git
+ * 
+ *   (c) 2019 sam.hongyang
+ *   Released under the MIT License.
+ *   hash: c56a13cd771565bff31f
+ * 
+ */.sako-vue .play-wrapper{position:relative;width:100%;height:300px}.sako-vue .video-js{width:100%;height:100%;font-size:14px}.sako-vue .video-js button{outline:none}.sako-vue .container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;padding-top:140px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}.sako-vue .mt-1{margin-top:15px}

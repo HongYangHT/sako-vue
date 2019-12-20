@@ -1,0 +1,9 @@
+/node_modules/**
+/dist/**
+/build/**
+
+*.js
+*.png
+*.eot
+*.ttf
+*.woff

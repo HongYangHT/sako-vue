@@ -1,0 +1,33 @@
+/*!
+ * 
+ *   sako-vue
+ *   vue template with webpack4
+ * 
+ *   @version v1.0.0
+ *   @homepage https://github.com/HongYangHT/sako-vue#readme
+ *   @repository git+https://github.com/HongYangHT/sako-vue.git
+ * 
+ *   (c) 2019 sam.hongyang
+ *   Released under the MIT License.
+ *   hash: c56a13cd771565bff31f
+ * 
+ */
+
+/*!
+ * Vue.js v2.6.11
+ * (c) 2014-2019 Evan You
+ * Released under the MIT License.
+ */
+
+/**
+ * vuex v3.1.2
+ * (c) 2019 Evan You
+ * @license MIT
+ */
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */

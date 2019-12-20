@@ -1,0 +1,37 @@
+/*!
+ * 
+ *   sako-vue
+ *   vue template with webpack4
+ * 
+ *   @version v1.0.0
+ *   @homepage https://github.com/HongYangHT/sako-vue#readme
+ *   @repository git+https://github.com/HongYangHT/sako-vue.git
+ * 
+ *   (c) 2019 sam.hongyang
+ *   Released under the MIT License.
+ *   hash: c56a13cd771565bff31f
+ * 
+ */
+
+/**
+ * @license
+ * Video.js 7.6.6 <http://videojs.com/>
+ * Copyright Brightcove, Inc. <https://www.brightcove.com/>
+ * Available under Apache License Version 2.0
+ * <https://github.com/videojs/video.js/blob/master/LICENSE>
+ *
+ * Includes vtt.js <https://github.com/mozilla/vtt.js>
+ * Available under Apache License Version 2.0
+ * <https://github.com/mozilla/vtt.js/blob/master/LICENSE>
+ */
+
+/*! @name m3u8-parser @version 4.4.0 @license Apache-2.0 */
+
+/*! @name mpd-parser @version 0.8.1 @license Apache-2.0 */
+
+/**
+   * @videojs/http-streaming
+   * @version 1.10.6
+   * @copyright 2019 Brightcove, Inc
+   * @license Apache-2.0
+   */
