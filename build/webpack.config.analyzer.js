@@ -1,10 +1,5 @@
-/*
- * @Author: sam.hongyang
- * @LastEditors  : sam.hongyang
- * @Description: 生产环境设置
- * @Date: 2019-12-19 14:54:12
- * @LastEditTime : 2019-12-20 15:53:41
- */
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
+
 const merge = require('webpack-merge')
 const base = require('./webpack.config')
 const TerserJSPlugin = require('terser-webpack-plugin')
@@ -13,10 +8,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const path = require('path')
 
-const SpeedMeasurePlugin = require('speed-measure-webpack-plugin')
-const smp = new SpeedMeasurePlugin()
-module.exports = smp.wrap(
-  merge(base, {
+module.exports = merge(base, {
     output: {
       path: path.resolve(__dirname, '../dist/asset'),
       publicPath: '/assets/',
@@ -105,6 +97,12 @@ module.exports = smp.wrap(
         })
       ]
     },
+    plugins: [
+      new BundleAnalyzerPlugin({
+        analyzerPort: 9000,
+        generateStatsFile: false
+      })
+    ],
     // 打包后显示优化信息
     performance: {
       maxEntrypointSize: 300000,
@@ -113,4 +111,3 @@ module.exports = smp.wrap(
       }
     }
   })
-)

@@ -3,7 +3,7 @@
  * @LastEditors  : sam.hongyang
  * @Description: 公共的webpack设置
  * @Date: 2019-12-19 14:26:12
- * @LastEditTime : 2019-12-20 14:59:38
+ * @LastEditTime : 2019-12-20 15:53:26
  */
 const webpack = require('webpack')
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
@@ -24,6 +24,8 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CompressionWebpackPlugin = require('compression-webpack-plugin')
 const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
+// const NyanProgressPlugin = require('nyan-progress-webpack-plugin')
+
 const path = require('path')
 
 const pkg = require('../package.json')
@@ -43,7 +45,17 @@ const banner = `
 const plugins = mode ? [
   new webpack.NamedModulesPlugin(),
   new webpack.HashedModuleIdsPlugin(),
-  new webpack.HotModuleReplacementPlugin()
+  new webpack.HotModuleReplacementPlugin(),
+  // new NyanProgressPlugin({
+  //   // 获取进度的时间间隔，默认 180 ms
+  //   debounceInterval: 60,
+  //   nyanCatSays (progress, messages) {
+  //     if (progress === 1) {
+  //       // 当构建完成时，喊出「呦，又在写 Bug 了？」
+  //       return '呦, 又在写 Bug 了'
+  //     }
+  //   }
+  // })
 ] : [
   new webpack.BannerPlugin(banner),
   new CleanWebpackPlugin({
@@ -204,11 +216,5 @@ module.exports = {
     net: 'empty',
     tls: 'empty',
     child_process: 'empty'
-  },
-  performance: {
-    maxEntrypointSize: 300000,
-    assetFilter: function (file) {
-      return file.endsWith('.js')
-    }
   }
 }

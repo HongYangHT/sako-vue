@@ -3,7 +3,7 @@
  * @LastEditors  : sam.hongyang
  * @Description: 开发环境设置
  * @Date: 2019-12-19 14:54:23
- * @LastEditTime : 2019-12-20 14:38:46
+ * @LastEditTime : 2019-12-20 15:34:36
  */
 const checkVersion = require('./check-version')
 
@@ -27,7 +27,7 @@ const devWebpackConfig = merge(base, {
   },
   devServer: {
     contentBase: path.resolve(__dirname, '../dist'),
-    clientLogLevel: 'warning',
+    clientLogLevel: 'info',
     hot: true, // 热更新
     open: true, // 是否自动打开浏览器页面
     compress: true, // 是否启用gzip
@@ -39,11 +39,12 @@ const devWebpackConfig = merge(base, {
     },
     hotOnly: true,
     historyApiFallback: true,
-    quiet: true, // necessary for FriendlyErrorsPlugin
+    quiet: false, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: false
     },
-    proxy: config.proxy
+    proxy: config.proxy,
+    stats: 'normal'
   },
 })
 

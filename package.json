@@ -6,10 +6,11 @@
   "scripts": {
     "eslint": "eslint --ext .js,.ts,.vue --fix src",
     "stylelint": "stylelint --cache src/**/*.{html,css,vue,scss,sass,less} --fix",
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --color --progress --config build/webpack.config.dev.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --color --progress --config build/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config build/webpack.config.build.js",
     "analyzer": "cross-env NODE_ENV=production webpack --config build/webpack.config.analyzer.js",
     "openServer": "http-server dist/ -o -g -p 8008",
+    "server": "npm-run-all build openServer",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "changeVersion": "npm version patch --no-git-tag-version",
     "precommit": "lint-staged"
@@ -62,6 +63,7 @@
     "lint-staged": "^9.5.0",
     "mini-css-extract-plugin": "^0.8.2",
     "node-sass": "^4.13.0",
+    "nyan-progress-webpack-plugin": "^1.2.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "portfinder": "^1.0.25",
     "postcss": "^7.0.25",
@@ -87,6 +89,7 @@
     "vue-style-loader": "^4.1.2",
     "vue-template-compiler": "^2.6.11",
     "webpack": "^4.41.3",
+    "webpack-bundle-analyzer": "^3.6.0",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.0",
     "webpack-merge": "^4.2.2"
@@ -100,7 +103,6 @@
     "core-js": "^2.6.11",
     "normalize.css": "^8.0.1",
     "video.js": "^7.6.6",
-    "videojs": "^1.0.0",
     "vue": "^2.6.11",
     "vue-design": "0.0.5",
     "vue-i18n": "^8.15.3",
